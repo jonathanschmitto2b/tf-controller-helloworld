@@ -4,7 +4,7 @@ kind: ServiceAccount
 metadata:
   name: tf-runner
 secrets:
-  - provider-aws-c7b0c182e22b-token-tfgfp
+  - name: provider-aws-c7b0c182e22b-token-tfgfp
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
