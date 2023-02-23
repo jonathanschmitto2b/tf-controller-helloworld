@@ -17,15 +17,15 @@ terraform {
         aws = "~> 4.17"
     }
     backend "s3" {
-        profile = "planktron"
+#         profile = "planktron"
         region = "us-east-1"
-        bucket = "planktron-development-ias-tfstates-terraform"
-        key = "infra/dev/"
+#         bucket = "planktron-development-ias-tfstates-terraform"
+#         key = "infra/dev/"
     }
 }
 
 provider "aws" {
-    profile = "planktron"
+#     profile = "planktron"
     region = "us-east-1"
 }
 resource "aws_s3_bucket" "plk-bucket-reports" {
